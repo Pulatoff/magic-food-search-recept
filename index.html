@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Magic Food</title>
+    <script defer src="./script.js"></script>
+    <style>
+        .container{
+            width: 250px;
+            height: 300px;
+            background-color: rgb(155, 155, 235);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.397);
+
+        }
+        .body{
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        img{
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .name__food{
+            font-size: 16px;
+            padding-left: 20px;
+            color: white;
+        }
+        .name__country{
+            font-size: 14px;
+            padding-left: 20px;
+            color: white;
+        }
+        .hidden{
+            overflow: hidden;
+            /* visibility: hidden; */
+        }
+        button{
+            display: block;
+            margin: 45px auto 0;
+            border-radius: 30px;
+            width: 80px;
+            height: 25px;
+            background-color: rgb(112, 240, 86);
+            border: none;
+            color: white;
+            transition: all 0.3s;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.397);
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+        input{
+            background-color: rgb(216, 198, 198);
+            border: none;
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+        }
+        input:focus{
+            outline: none;
+        }
+        input::placeholder{
+            padding-left: 10px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 95%;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        .instruct-box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.197);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .instruct{
+            width: 50%;
+            height: 40%;
+            background-color: rgb(204, 204, 134);
+            padding: 50px;
+            position: relative;
+            overflow: scroll;
+            transition: all 0.5s;
+        }
+        .closeBtn{
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+        
+    </style>
+</head>
+<body class="body">
+    <form action="">
+        <input class="search" type="search" placeholder="enter food">
+    </form>
+    <div class="grid"></div>
+    <!-- <div class="container hidden">
+        <img src="c" alt="" class="img">
+        <h1 class="name__food">🧇 NAME</h1>
+        <h1 class="name__country">🌍 country</h1>
+        <button>рецепт</button>
+    </div> -->
+    <!-- <div class="instruct-box visibility">
+       <div class="instruct">
+           <p class="closeBtn">X</p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero asperiores eum voluptates saepe est esse ullam natus eius sapiente quas quis numquam nulla optio, aut sequi reiciendis quisquam quidem ducimus.
+       </div>
+    </div> -->
+</body>
+</html>
